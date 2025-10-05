@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="icon" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="sidebar-section sidebar-nav">
+                <div class="logo">
+                    <i class="fab fa-spotify"></i> Spotify
+                </div>
+                <ul>
+                    <li class="active"><i class="fa fa-home"></i><span>Home</span></li>
+                    <li><i class="fa fa-search"></i><span>Search</span></li>
+                </ul>
+            </nav>
+            <div class="sidebar-section sidebar-library">
+                <div class="library-header">
+                    <div class="library-header-text">
+                        <i class="fa fa-book"></i>
+                        <span>Your Library</span>
+                    </div>
+                    <button class="icon-btn"><i class="fa fa-plus"></i></button>
+                </div>
+                <div class="library-card">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <a href="https://open.spotify.com/download"><button class="btn-white">Create playlist</button></a>
+                </div>
+                <div class="library-card">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <a href="https://open.spotify.com/genre/podcasts-web"><button class="btn-white">Browse podcasts</button></a>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="footer-links">
+                        <a href="#">Legal</a>
+                        <a href="#">Safety & Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                    <button class="btn-lang"><i class="fa fa-globe"></i> English</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-bar">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+                <div class="header-user-buttons">
+                    <a href="https://www.spotify.com/in-en/premium/" class="header-link">Premium</a>
+                    <a href="support.html" class="header-link">Support</a>
+                    <a href="https://www.spotify.com/in-en/download/windows/" class="header-link">Download</a>
+                    <span class="divider">|</span>
+                    <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F"><button class="btn-signup-clear">Sign up</button></a>
+                    <a href="https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2F"><button class="btn-login-solid">Log in</button></a>
+                </div>
+            </header>
+
+            <section class="section" id="trending-songs">
+                <div class="section-header">
+                    <h2 class="section-title">Trending songs</h2>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+                <div class="card-container">
+                    <div class="card"><img src="images/PERFECT.jpeg" alt="PERFECT"><div class="play-button"><i class="fas fa-play"></i></div><h4 class="card-title"><a href="#" title="PERFECT">PERFECT</a></h4><p class="card-subtitle">Guru Randhawa</p></div>
+                    <div class="card"><img src="images/Janan.jpg" alt="Jaana Nahi"><div class="play-button"><i class="fas fa-play"></i></div><h4 class="card-title"><a href="#" title="Jaana Nahi">Jaana Nahi</a></h4><p class="card-subtitle">Faheem Abdullah</p></div>
+                    <div class="card"><img src="images/Behtar.png" alt="Tumse Behtar"><div class="play-button"><i class="fas fa-play"></i></div><h4 class="card-title"><a href="#" title="Tumse Behtar">Tumse Behtar</a></h4><p class="card-subtitle">Arijit Singh</p></div>
+                    <div class="card"><img src="images/Sundari.jpg" alt="Sundari"><div class="play-button"><i class="fas fa-play"></i></div><h4 class="card-title"><a href="#" title="Sundari">Sundari</a></h4><p class="card-subtitle">Sanju Rathod</p></div>
+                    <div class="card"><img src="images/Merena.webp" alt="Tum Mere Na Huye"><div class="play-button"><i class="fas fa-play"></i></div><h4 class="card-title"><a href="#" title="Tum Mere Na Huye">Tum Mere Na Huye</a></h4><p class="card-subtitle">Sachin-Jigar</p></div>
+                    <div class="card"><img src="images/Kashish.jpg" alt="Kashish"><div class="play-button"><i class="fas fa-play"></i></div><h4 class="card-title"><a href="#" title="Kashish">Kashish</a></h4><p class="card-subtitle">Ashish Bhatia</p></div>
+                </div>
+            </section>
+
+            <section class="section" id="popular-artists">
+                <div class="section-header">
+                    <h2 class="section-title">Popular artists</h2>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+                <div class="card-container">
+                    <div class="card"><img src="images/pritam.jpg" alt="Pritam" class="artist-img"><h4 class="card-title">Pritam</h4><p class="card-subtitle">Artist</p></div>
+                    <div class="card"><img src="images/Ashish.jpg" alt="A.R. Rahman" class="artist-img"><h4 class="card-title">A.R. Rahman</h4><p class="card-subtitle">Artist</p></div>
+                    <div class="card"><img src="images/arjit.jpeg" alt="Arijit Singh" class="artist-img"><h4 class="card-title">Arijit Singh</h4><p class="card-subtitle">Artist</p></div>
+                    <div class="card"><img src="images/Sachin.jpeg" alt="Sachin-Jigar" class="artist-img"><h4 class="card-title">Sachin-Jigar</h4><p class="card-subtitle">Artist</p></div>
+                    <div class="card"><img src="images/vishal.jpeg" alt="Vishal-Shekhar" class="artist-img"><h4 class="card-title">Vishal-Shekhar</h4><p class="card-subtitle">Artist</p></div>
+                    <div class="card"><img src="images/atif.jpg" alt="Atif Aslam" class="artist-img"><h4 class="card-title">Atif Aslam</h4><p class="card-subtitle">Artist</p></div>
+                </div>
+            </section>
+
+            <section class="section" id="top-charts">
+                <div class="section-header">
+                    <h2 class="section-title">Top Charts</h2>
+                </div>
+                <div class="card-container">
+                    <div class="card"><img src="images/topcharts/global.png" alt="Top Songs Global"><h4 class="card-title">Top Songs Global</h4><p class="card-subtitle">Weekly Music Charts</p></div>
+                    <div class="card"><img src="images/topcharts/india.png" alt="Top Songs India"><h4 class="card-title">Top Songs India</h4><p class="card-subtitle">Weekly Music Charts</p></div>
+                    <div class="card"><img src="images/topcharts/top50.png" alt="Top 50 Global"><h4 class="card-title">Top 50 Global</h4><p class="card-subtitle">Your daily update</p></div>
+                    <div class="card"><img src="images/topcharts/viral.png" alt="Viral 50"><h4 class="card-title">Viral 50 Global</h4><p class="card-subtitle">Most viral tracks</p></div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Jobs</a></li><li><a href="#">For the Record</a></li></ul></div>
+                        <div class="footer-col"><h4>Communities</h4><ul><li><a href="#">For Artists</a></li><li><a href="#">Developers</a></li><li><a href="#">Advertising</a></li></ul></div>
+                        <div class="footer-col"><h4>Useful Links</h4><ul><li><a href="#">Support</a></li><li><a href="#">Free Mobile App</a></li></ul></div>
+                    </div>
+                    <div class="footer-social">
+                        <button class="social-btn"><i class="fab fa-instagram"></i></button>
+                        <button class="social-btn"><i class="fab fa-twitter"></i></button>
+                        <button class="social-btn"><i class="fab fa-facebook"></i></button>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <p class="footer-copyright">&copy; 2025 Spotify AB</p>
+            </footer>
+        </main>
+
+        <div class="player-section">
+            <div class="preview-banner" id="preview-banner">
+                <div class="preview-text">
+                    <p>Preview of Spotify</p>
+                    <span>Sign up to get unlimited songs and podcasts with occasional ads.</span>
+                </div>
+                <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F"><button class="signup-btn">Sign up free</button></a>
+            </div>
+            <div class="music-player" id="music-player">
+                <div class="song-info">
+                    <img id="player-thumb" src="images/default.png" alt="Album Art">
+                    <div class="song-details">
+                        <span id="player-title">Song Title</span>
+                        <span id="player-artist">Artist Name</span>
+                    </div>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="player-controls">
+                    <div class="control-buttons">
+                        <i class="fas fa-random" id="player-shuffle"></i>
+                        <i class="fas fa-step-backward" id="player-prev"></i>
+                        <i class="fas fa-play-circle" id="player-play"></i>
+                        <i class="fas fa-step-forward" id="player-next"></i>
+                        <i class="fas fa-redo" id="player-repeat"></i>
+                    </div>
+                    <div class="progress-bar-container">
+                        <span id="current-time">0:00</span>
+                        <input id="player-progress" type="range" min="0" value="0">
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+                <div class="extra-controls">
+                    <i class="fas fa-volume-up"></i>
+                    <input id="player-volume" type="range" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
