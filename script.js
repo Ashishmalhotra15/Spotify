@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- DATA ---
     const songs = [
         { title: 'PERFECT', artist: 'Guru Randhawa', image: 'images/PERFECT.jpeg', audio: 'music/Perfect.mp3' },
         { title: 'Jaana Nahi', artist: 'Faheem Abdullah', image: 'images/Janan.jpg', audio: 'music/jaana-nahi.mp3' },
@@ -9,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'Kashish', artist: 'Ashish Bhatia', image: 'images/Kashish.jpg', audio: 'music/Kashish.mp3' }
     ];
 
-    // --- ELEMENTS ---
     const audioPlayer = new Audio();
     const songCards = document.querySelectorAll('#trending-songs .card');
     
-    // Player and Banner Elements
     const previewBanner = document.getElementById('preview-banner');
     const musicPlayer = document.getElementById('music-player');
     const playPauseBtn = document.getElementById('player-play');
@@ -31,8 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentSongIndex = -1;
     let isShuffle = false;
-
-    // --- FUNCTIONS ---
+    
     function playSong(index) {
         if (index < 0 || index >= songs.length) return;
         currentSongIndex = index;
@@ -51,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         playerArtist.textContent = songData.artist;
         
         previewBanner.style.display = 'none';
-        musicPlayer.style.display = 'grid'; // Use grid for player layout
+        musicPlayer.style.display = 'grid';
     }
 
     function togglePlayPause() {
@@ -90,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
     }
 
-    // --- EVENT LISTENERS ---
     songCards.forEach((card, index) => {
         card.addEventListener('click', () => playSong(index));
     });
@@ -136,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     document.addEventListener('keydown', (e) => {
-        if (e.target.tagName === 'INPUT') return; // Don't trigger on search bar
+        if (e.target.tagName === 'INPUT') return;
         if (e.code === 'Space') {
             e.preventDefault();
             togglePlayPause();
@@ -146,4 +141,5 @@ document.addEventListener('DOMContentLoaded', () => {
             playPrev();
         }
     });
+
 });
